@@ -6,8 +6,6 @@ ENV PYTHONUNBUFFERED=1
 
 ADD . /usr/local/src
 
-RUN chmod +x /usr/local/src/entrypoint.sh
-
 WORKDIR /usr/local/src
 
 ENTRYPOINT [ "/usr/local/src/entrypoint.sh" ]
